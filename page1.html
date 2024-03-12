@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 1</title>
+</head>
+<body>
+  <button id="showHelloWorld">Show Hello World</button>
+  <div id="helloWorldContent"></div>
+  <script>
+    const showHelloWorldButton = document.getElementById('showHelloWorld');
+    const helloWorldContentDiv = document.getElementById('helloWorldContent');
+
+    showHelloWorldButton.addEventListener('click', () => {
+      fetch('page2.html')
+        .then(response => response.text())
+        .then(data => {
+          helloWorldContentDiv.innerHTML = data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    });
+  </script>
+</body>
+</html>

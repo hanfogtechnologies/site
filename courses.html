@@ -1,0 +1,183 @@
+<html>
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .tabButtons {
+    border: none;
+    font-size: auto;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  button {
+    cursor: pointer;
+  }
+   ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    li {
+      padding-top: 30px;
+      font-size: large;
+    }
+</style>
+
+<body>
+  <table>
+    <tr>
+      <th style="padding-top:10px;padding-left:30px;">
+        <img src="C:\Users\Nagendra\Desktop\Self Han Tecno\HAnwp.png" alt="salesforce" width="250px" height="100px">
+      </th>
+      <th style="padding-left:250px;">
+        <button class="tabButtons" id="ourVision" onclick="window.location.href='HAnFogTechnlogies.htm'">Home
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="tabButtons" id="ourVision">Our View on
+          Salesforce</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="tabButtons" id="course"
+          >Courses</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="tabButtons" onclick="('Salesforce')">Our view on Aspirants</button>
+        <button class="tabButtons" onclick="('Salesforce')">Our Social Media</button>
+      </th>
+    </tr>
+  </table>
+  <div style="text-align:center;padding-top: 20px; height: 250px; background-color:rgb(177, 201, 220)">
+    <h1 style="font-family: Copperplate, Papyrus, fantasy;padding-top:50px">Courses Offered</h1>
+    <h3 style="font-family: Copperplate, Papyrus, fantasy;">
+      Salesforce provides multiple modules by default in order of  UI, Controlling, Handling
+    </h3>
+  </div>
+<div id="courses">
+  <div class="card-container" style="width:100%;padding-left:50px">
+    <div class="card">
+      <img class="img" src="C:\Users\Nagendra\Desktop\Self Han Tecno\admin.png" alt="admin">
+      <div class="container">
+        <h4>
+          <b>Salesforce Admin</b>
+        </h4>
+        <p>Click for Admin Topics</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Nagendra\Desktop\Self Han Tecno\developer.jpg" alt="admin" width="130px">
+      <div class="container">
+        <h4>
+          <b>Salesforce Development</b>
+        </h4>
+        <p>Click for Development Topics</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="img" src="C:\Users\Nagendra\Desktop\Self Han Tecno\integration.jpg" alt="admin">
+      <div class="container">
+        <h4>
+          <b>Salesforce Integration</b>
+        </h4>
+        <p>Click for Integration Topics</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="img" src="C:\Users\Nagendra\Desktop\Self Han Tecno\lwc.jpg" alt="admin">
+      <div class="container">
+        <h4>
+          <b>Salesforce LWC</b>
+        </h4>
+        <p>Click for LWC Topics</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align:center;background-color:rgb(171, 210, 243);margin-top:300px">
+  <h1 style="padding: 10px;color:rgb(29, 32, 34)">Our Saying : Learn in mother tongue, then it makes the communication</h1>
+<table style="width:100%;padding:30px 0 0 300px;background-color:rgb(220, 234, 245)">
+  <tr>
+    <td>
+      <ul>
+        <h2>
+          Training Channel
+        </h2>
+        <li>
+          Google Meet
+        </li>
+        <li>
+          Webinars
+        </li>
+        <li>
+          Live Events
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <h2>
+          Company Goals
+        </h2>
+        <li>
+          To build the Salesforce man power
+        </li>
+        <li>
+          Enhance the Salesforce skills
+        </li>
+        <li>
+          Trust in business
+        </li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <h2>
+          Contact Us
+        </h2>
+        <li>
+          Phone : +91 6309380761
+        </li>
+        <li>
+          Email: hanfogtechologies.com
+        </li>
+        <li>
+          Website :www.hanfogtechnologies.com
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</div>
+  <script>
+    document.getElementById("course").addEventListener("click", function () {
+        var aboutUS = document.getElementById("courses");
+        aboutUS.style.display = "block";
+        aboutUS.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
